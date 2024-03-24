@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.auroraos.MIREA
+Exec=/usr/bin/ru.auroraos.MIREA
+Name=Template
+Name[ru]=Шаблон
+
+[X-Application]
+Permissions=PushNotifications;Internet;UserDirs
+OrganizationName=ru.auroraos
+ApplicationName=MIREA
+ExecDBus=/usr/bin/ru.auroraos.MIREA
