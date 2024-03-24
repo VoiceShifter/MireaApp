@@ -102,17 +102,35 @@ APP</source>
 <context>
     <name>MainPage4</name>
     <message>
-        <location filename="../qml/pages/MainPage4.qml" line="27"/>
+        <location filename="../qml/pages/MainPage4.qml" line="30"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage4.qml" line="40"/>
+        <location filename="../qml/pages/MainPage4.qml" line="43"/>
         <source>IKBO - XX - XX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage4.qml" line="52"/>
+        <location filename="../qml/pages/MainPage4.qml" line="55"/>
+        <source>username</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainPage5</name>
+    <message>
+        <location filename="../qml/pages/MainPage5.qml" line="28"/>
+        <source>+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage5.qml" line="40"/>
+        <source>Математика</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage5.qml" line="52"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>

@@ -21,13 +21,6 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
     }
 
-//    Rectangle {
-//        width: 3
-//        height: parent.height
-//        x: parent.width / 2
-//        color: "blue"
-//    }
-
     Rectangle {
         id: _aFirst
         width: parent.width / 6
@@ -43,13 +36,6 @@ Rectangle {
             anchors.centerIn: parent
         }
     }
-
-//    Rectangle {
-//        width: 3
-//        height: parent.height
-//        x: parent.width / 2 + parent.width / 6 + 1
-//        color: "blue"
-//    }
 
     Rectangle {
 
@@ -67,12 +53,7 @@ Rectangle {
         }
     }
 
-//    Rectangle {
-//        width: 3
-//        height: parent.height
-//        x: parent.width / 2 + 2 * parent.width / 6 + 2
-//        color: "blue"
-//    }
+
 
     Rectangle {
 
@@ -89,14 +70,6 @@ Rectangle {
             anchors.centerIn: parent
         }
     }
-
-//    Rectangle {
-//        width: 3
-//        height: parent.height
-//        x: parent.width / 2 + 3 * parent.width / 6 + 3 - 5
-//        color: "blue"
-//    }
-
 
 }
 

@@ -1,9 +1,12 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import Sailfish.Silica 1.0
+import QtQml.Models 2.1
 import "MyDir"
 
 Page {
+
+
     Rectangle
     {
 
@@ -69,107 +72,177 @@ Page {
             anchors.topMargin: 20
         }
 
-        AttendanceLine
+
+
+
+        SilicaFlickable
         {
-            id: _Template
-            _StudentName: ""
             anchors.top: _Breaker.bottom
-            anchors.topMargin: 20
-            _First: "+"
-            _Second: "-"
-            _Third: "?"
-        }
-        Column
-        {
-            id: _StudentList
-            spacing: -1
+            anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            anchors.top: _Template.bottom
-            anchors.horizontalCenter: _Template.horizontalCenter
+            height: parent.height
 
             AttendanceLine
             {
-                _StudentName: "test"
+                id: _Template
+                _StudentName: ""
+                anchors.top: parent.top
+                anchors.topMargin: 20
+                _First: "+"
+                _Second: "-"
+                _Third: "?"
             }
-            AttendanceLine
+
+
+            ListView
             {
+                anchors.top: _Template.bottom
+                width: parent.width
+                model: _DataModel
+                height: parent.height
+
 
             }
-            AttendanceLine
+            ObjectModel
             {
+                id: _DataModel
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+                AttendanceLine
+                {
+                    _StudentName: "Username"
+                }
+
 
             }
-            AttendanceLine
-            {
+VerticalScrollDecorator{}
+
+    //            VerticalScrollDecorator{
+    //                    id: vbar
+
+    //                    anchors.top: parent.top
+    //                    anchors.right: parent.right
+    //                    anchors.bottom: parent.bottom
+    //                }
 
             }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-            AttendanceLine
-            {
-
-            }
-
-
-
-
-
-
         }
 
 
 
-    }
 
 
 }
