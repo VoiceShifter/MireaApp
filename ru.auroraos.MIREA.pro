@@ -21,6 +21,7 @@ DISTFILES += \
     qml/pages/MyDir/MenuItem.qml \
     qml/pages/MyDir/MyDrawer.qml \
     qml/pages/MyDir/StudentsList.qml \
+    qml/pages/RedRectangle.qml \
     qml/pages/Subject.qml \
     qml/pages/test.qml \
     rpm/ru.auroraos.MIREA.spec \

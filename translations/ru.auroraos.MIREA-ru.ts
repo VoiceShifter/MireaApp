@@ -66,17 +66,32 @@ APP</source>
 <context>
     <name>MainPage2</name>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="55"/>
+        <location filename="../qml/pages/MainPage2.qml" line="61"/>
+        <source>Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage2.qml" line="76"/>
+        <source>Teachers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage2.qml" line="92"/>
+        <source>Attendance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage2.qml" line="134"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="86"/>
+        <location filename="../qml/pages/MainPage2.qml" line="156"/>
         <source>&lt;-- Понедельник --&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="98"/>
+        <location filename="../qml/pages/MainPage2.qml" line="168"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
@@ -131,6 +146,24 @@ APP</source>
     </message>
     <message>
         <location filename="../qml/pages/MainPage5.qml" line="52"/>
+        <source>username</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RedRectangle</name>
+    <message>
+        <location filename="../qml/pages/RedRectangle.qml" line="28"/>
+        <source>+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/RedRectangle.qml" line="40"/>
+        <source>Математика</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/RedRectangle.qml" line="52"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>

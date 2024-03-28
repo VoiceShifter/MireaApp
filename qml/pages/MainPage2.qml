@@ -4,8 +4,20 @@ import "MyDir"
 
 
 
+
 Page
 {
+
+    Loader
+    {
+        z:10
+        id: _Loader
+        anchors.fill: parent
+    }
+
+Colors{
+id: _Colors
+}
 
     Drawer
     {
@@ -18,28 +30,95 @@ Page
         height: parent.height
         hideOnMinimize: true
         backgroundSize: parent.width / 2
+
         dock: Dock.Left
+
         background: Rectangle
         {
             z:6
-            height: parent.height
-            width: parent.width
-            color: Colors._LightPurple
-            radius: 30
+
+            color: _Colors._PowderBlue
             border.color: "black"
             border.width: 2
+            anchors.fill : parent
+            Column
+            {
+                spacing: -1
+                width: parent.width
+
+                anchors.top: parent.top
+                anchors.topMargin: 140
+
+                Rectangle
+                {
+                    width: parent.width - 1
+                    border.color: "black"
+                    border.width: 1
+                    height: _Colors._SideButtonHeight
+                    color: _Colors._CoolGray
+                    Text {
+                        id: _ToSchedule
+                        text: qsTr("Schedule")
+                        font.pointSize: _Colors._MediumFont
+                        color: "black"
+                        anchors.centerIn: parent
+                    }
+                }
+                Rectangle
+                {
+                    width: parent.width - 1
+                    border.color: "black"
+                    border.width: 1
+                    height: _Colors._SideButtonHeight
+                    color: _Colors._CoolGray
+                    Text {
+                        id: _ToTeachers
+                        text: qsTr("Teachers")
+                        font.pointSize: _Colors._MediumFont
+                        color: "black"
+                        anchors.centerIn: parent
+                    }
+
+                }
+                Rectangle
+                {
+                    width: parent.width - 1
+                    border.color: "black"
+                    border.width: 1
+                    height: _Colors._SideButtonHeight
+                    color: _Colors._CoolGray
+                    Text {
+                        id: _Attendance
+                        text: qsTr("Attendance")
+                        font.pointSize: _Colors._MediumFont
+                        color: "black"
+                        anchors.centerIn: parent
+                    }
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        onClicked:
+                        {
+                               _Loader.source = "MainPage5.qml"
+                               console.log("Clicked Attendance button")
+                        }
+
+                    }
+                }
+            }
+
         }
 
     }
     Rectangle
-                {
-                    z: -1
-                    anchors.fill: parent
-            //        width: parent.width
-            //        height: parent.height
-                    color: "#7881AE"
+    {
+        z: -1
+        anchors.fill: parent
+//        width: parent.width
+//        height: parent.height
+        color: "#7881AE"
 
-                }
+    }
     Rectangle
     {
         z:7
@@ -67,16 +146,7 @@ Page
         anchors.fill: _Menu
         onClicked:
         {
-            if (_Drawer.opened)
-            {
-                _Drawer.open = false
-                console.log("Clicked _MenuButton - closed\nDrawer Status - ", _Drawer.opened)
-            }
-            else
-            {
-                _Drawer.open = true
-                console.log("Clicked _MenuButton - opened\nDrawer Status - ", _Drawer.opened)
-            }
+            _Drawer.open = !_Drawer.open
 
         }
     }

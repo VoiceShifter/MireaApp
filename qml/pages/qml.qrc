@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainPage.qml</file>
+        <file>MainPage2.qml</file>
+        <file>MainPage3.qml</file>
+        <file>MainPage4.qml</file>
+        <file>MainPage5.qml</file>
+        <file>MyDir/Colors.qml</file>
+        <file>MyDir/MenuItem.qml</file>
+        <file>MyDir/AttendanceLine.qml</file>
+        <file>MyDir/MyDrawer.qml</file>
+        <file>MyDir/StudentList.qml</file>
+        <file>MyDir/Subject.qml</file>
+    </qresource>
+</RCC>
