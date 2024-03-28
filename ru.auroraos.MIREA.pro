@@ -19,8 +19,10 @@ DISTFILES += \
     qml/pages/MyDir/AttendanceLine.qml \
     qml/pages/MyDir/Colors.qml \
     qml/pages/MyDir/MenuItem.qml \
+    qml/pages/MyDir/MyDrawer.qml \
     qml/pages/MyDir/StudentsList.qml \
     qml/pages/Subject.qml \
+    qml/pages/test.qml \
     rpm/ru.auroraos.MIREA.spec \
     qml/pages/MyDir/Subject.qml \
 
@@ -31,3 +33,5 @@ CONFIG += auroraapp_i18n
 TRANSLATIONS += \
     translations/ru.auroraos.MIREA.ts \
     translations/ru.auroraos.MIREA-ru.ts \
+
+RESOURCES +=

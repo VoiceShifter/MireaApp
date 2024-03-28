@@ -1,9 +1,10 @@
+pragma Singleton
 import QtQuick 2.0
 
 
-Item
+QtObject
 {
-    property string _LightBlue: "#DBE2EF"
-    property string _LightPurple: "#7881AE"
+    readonly property string _LightBlue: "#DBE2EF"
+    readonly property string _LightPurple: "#7881AE"
 }
 

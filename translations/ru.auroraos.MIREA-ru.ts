@@ -66,17 +66,17 @@ APP</source>
 <context>
     <name>MainPage2</name>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="28"/>
+        <location filename="../qml/pages/MainPage2.qml" line="55"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="40"/>
+        <location filename="../qml/pages/MainPage2.qml" line="86"/>
         <source>&lt;-- Понедельник --&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="52"/>
+        <location filename="../qml/pages/MainPage2.qml" line="98"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
