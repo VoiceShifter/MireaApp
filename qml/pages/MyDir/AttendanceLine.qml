@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
+
     property color _LightBlue: "#DBE2EF"
     property color _LightPurple: "#7881AE"
     width: parent.width

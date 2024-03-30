@@ -2,9 +2,11 @@ import QtQuick 2.6
 import Sailfish.Silica 1.0
 
 
-Page
+Item
 {
 
+    width: parent.width
+    height: parent.height
     Rectangle
     {
         Text {
@@ -53,27 +55,7 @@ Page
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                 }
-                
 
-                // Icon
-                // {
-                //     source: "home.svg"
-                //     anchors.horizontalCenter: parent.horizontalCenter
-                //     anchors.verticalCenter: parent.verticalCenter
-                //     color: "black"
-                //     // height: 150
-                //     // width: 150
-                // }
-
-//                IconButton{}
-//                {
-//                    icon.source: "image://icon-m-home.svg"
-
-
-//                    anchors.horizontalCenter: parent.horizontalCenter
-//                    anchors.verticalCenter: parent.verticalCenter
-
-//                }
                 anchors.horizontalCenter: parent.horizontalCenter
 
 
@@ -119,7 +101,7 @@ Page
 
             Rectangle
             {
-                id: login_button
+                id: _LoginButton
                 y:550
                 radius: 20
                 width: 207
@@ -133,53 +115,18 @@ Page
                 }
                 color: "#BBD0FF"
                 anchors.horizontalCenter: parent.horizontalCenter
-
+                MouseArea
+                {
+                    anchors.fill: parent
+                    onClicked:
+                    {
+                        _Loader.source = "MainPage2.qml"
+                        console.log("Enter button pressed")
+                    }
+                }
 
             }
 
-
-
-
-
         }
     }
-//    Item
-//    {
-
-//        Rectangle
-//        {
-//            color: Qt.rgba(120/255, 129/255, 174/255, 0.3)
-//            width: parent.width
-//            height: parent.height
-
-//        }
-//    }
-
 }
-
-//Page {
-//    objectName: "mainPage"
-//    allowedOrientations: Orientation.All
-
-
-//    backgroundColor: "7881AE"
-
-
-////    PageHeader {
-
-////        objectName: "Login"
-////        title: qsTr("Mirea")
-
-////        extraContent.children: [
-////            IconButton {
-////                objectName: "aboutButton"
-////                icon.source: "image://theme/icon-m-about"
-////                anchors.verticalCenter: parent.verticalCenter
-
-////                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
-////            }
-////        ]
-////    }
-
-
-//}

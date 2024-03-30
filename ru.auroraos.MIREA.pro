@@ -12,12 +12,14 @@ HEADERS += \
 
 DISTFILES += \
     D:/tor/метода/icons8-home-windows/icons8-home-64.svg \
+    qml/pages/LoaderPage.qml \
     qml/pages/MainPage2.qml \
     qml/pages/MainPage3.qml \
     qml/pages/MainPage4.qml \
     qml/pages/MainPage5.qml \
     qml/pages/MyDir/AttendanceLine.qml \
     qml/pages/MyDir/Colors.qml \
+    qml/pages/MyDir/MenuButton.qml \
     qml/pages/MyDir/MenuItem.qml \
     qml/pages/MyDir/MyDrawer.qml \
     qml/pages/MyDir/StudentsList.qml \

@@ -5,15 +5,12 @@ import "MyDir"
 
 
 
-Page
+Item
 {
+    width: parent.width
+    height: parent.height
+    id: _MainPage
 
-    Loader
-    {
-        z:10
-        id: _Loader
-        anchors.fill: parent
-    }
 
 Colors{
 id: _Colors
@@ -99,8 +96,9 @@ id: _Colors
                         anchors.fill: parent
                         onClicked:
                         {
-                               _Loader.source = "MainPage5.qml"
-                               console.log("Clicked Attendance button")
+
+                            _Loader.setSource("RedRectangle.qml")
+                            console.log("Clicked Attendance button")
                         }
 
                     }

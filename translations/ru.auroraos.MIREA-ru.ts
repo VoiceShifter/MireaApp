@@ -42,23 +42,23 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="12"/>
+        <location filename="../qml/pages/MainPage.qml" line="14"/>
         <source>MIREA
 APP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="83"/>
+        <location filename="../qml/pages/MainPage.qml" line="65"/>
         <source>Login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="111"/>
+        <location filename="../qml/pages/MainPage.qml" line="93"/>
         <source>Forget password?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="128"/>
+        <location filename="../qml/pages/MainPage.qml" line="110"/>
         <source>ENTER</source>
         <translation type="unfinished"></translation>
     </message>
@@ -66,32 +66,32 @@ APP</source>
 <context>
     <name>MainPage2</name>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="61"/>
+        <location filename="../qml/pages/MainPage2.qml" line="58"/>
         <source>Schedule</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="76"/>
+        <location filename="../qml/pages/MainPage2.qml" line="73"/>
         <source>Teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="92"/>
+        <location filename="../qml/pages/MainPage2.qml" line="89"/>
         <source>Attendance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="134"/>
+        <location filename="../qml/pages/MainPage2.qml" line="132"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="156"/>
+        <location filename="../qml/pages/MainPage2.qml" line="154"/>
         <source>&lt;-- Понедельник --&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="168"/>
+        <location filename="../qml/pages/MainPage2.qml" line="166"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
@@ -151,19 +151,40 @@ APP</source>
     </message>
 </context>
 <context>
-    <name>RedRectangle</name>
+    <name>MenuButton</name>
     <message>
-        <location filename="../qml/pages/RedRectangle.qml" line="28"/>
+        <location filename="../qml/pages/MyDir/MenuButton.qml" line="18"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>MyDrawer</name>
     <message>
-        <location filename="../qml/pages/RedRectangle.qml" line="40"/>
-        <source>Математика</source>
+        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="49"/>
+        <source>Schedule</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/RedRectangle.qml" line="52"/>
+        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="64"/>
+        <source>Teachers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="80"/>
+        <source>Attendance</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RedRectangle</name>
+    <message>
+        <location filename="../qml/pages/RedRectangle.qml" line="33"/>
+        <source>IKBO - XX - XX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/RedRectangle.qml" line="45"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
