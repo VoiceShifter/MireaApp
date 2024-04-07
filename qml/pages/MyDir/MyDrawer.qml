@@ -51,6 +51,16 @@ Drawer
                     color: "black"
                     anchors.centerIn: parent
                 }
+                MouseArea
+                {
+                    anchors.fill: parent
+                    onClicked:
+                    {
+                           _Loader.source = "../MainPage2.qml"
+                           console.log("Clicked Attendance button")
+                    }
+
+                }
             }
             Rectangle
             {
@@ -65,6 +75,16 @@ Drawer
                     font.pointSize: _Colors._MediumFont
                     color: "black"
                     anchors.centerIn: parent
+                }
+                MouseArea
+                {
+                    anchors.fill: parent
+                    onClicked:
+                    {
+                           _Loader.source = "../Teachers.qml"
+                           console.log("Clicked Teachers button")
+                    }
+
                 }
 
             }
@@ -87,7 +107,7 @@ Drawer
                     anchors.fill: parent
                     onClicked:
                     {
-                           _Loader.source = "../RedRectangle.qml"
+                           _Loader.source = "../MainPage4.qml"
                            console.log("Clicked Attendance button")
                     }
 

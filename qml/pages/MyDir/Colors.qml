@@ -4,8 +4,8 @@ import QtQuick 2.0
 Item
 {
     id: _Colors
-    readonly property string _LightBlue: "#DBE2EF"
-    readonly property string _LightPurple: "#7881AE"
+    readonly property string _LightBlue: "#dbe2ef"
+    readonly property string _LightPurple: "#7881ae"
     readonly property string _PowderBlue: "#aab2cf"
     readonly property string _CoolGray: "#848cb5"
     readonly property int _SideButtonHeight: 140

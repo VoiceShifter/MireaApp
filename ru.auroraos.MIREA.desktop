@@ -3,8 +3,8 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=ru.auroraos.MIREA
 Exec=/usr/bin/ru.auroraos.MIREA
-Name=Template
-Name[ru]=Шаблон
+Name=Mirea
+Name[ru]=Мирэа
 
 [X-Application]
 Permissions=PushNotifications;Internet;UserDirs

@@ -1,4 +1,4 @@
-import QtQuick 2.0
+    import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "MyDir"
 
@@ -7,107 +7,20 @@ import "MyDir"
 
 Item
 {
-    width: parent.width
-    height: parent.height
+
     id: _MainPage
 
 
-Colors{
-id: _Colors
-}
-
-    Drawer
+    Colors
     {
-        z: 5
-        id: _Drawer
-        open: false
-        anchors.top: parent.top
-        anchors.left: parent.left
-        width: parent.width
-        height: parent.height
-        hideOnMinimize: true
-        backgroundSize: parent.width / 2
-
-        dock: Dock.Left
-
-        background: Rectangle
-        {
-            z:6
-
-            color: _Colors._PowderBlue
-            border.color: "black"
-            border.width: 2
-            anchors.fill : parent
-            Column
-            {
-                spacing: -1
-                width: parent.width
-
-                anchors.top: parent.top
-                anchors.topMargin: 140
-
-                Rectangle
-                {
-                    width: parent.width - 1
-                    border.color: "black"
-                    border.width: 1
-                    height: _Colors._SideButtonHeight
-                    color: _Colors._CoolGray
-                    Text {
-                        id: _ToSchedule
-                        text: qsTr("Schedule")
-                        font.pointSize: _Colors._MediumFont
-                        color: "black"
-                        anchors.centerIn: parent
-                    }
-                }
-                Rectangle
-                {
-                    width: parent.width - 1
-                    border.color: "black"
-                    border.width: 1
-                    height: _Colors._SideButtonHeight
-                    color: _Colors._CoolGray
-                    Text {
-                        id: _ToTeachers
-                        text: qsTr("Teachers")
-                        font.pointSize: _Colors._MediumFont
-                        color: "black"
-                        anchors.centerIn: parent
-                    }
-
-                }
-                Rectangle
-                {
-                    width: parent.width - 1
-                    border.color: "black"
-                    border.width: 1
-                    height: _Colors._SideButtonHeight
-                    color: _Colors._CoolGray
-                    Text {
-                        id: _Attendance
-                        text: qsTr("Attendance")
-                        font.pointSize: _Colors._MediumFont
-                        color: "black"
-                        anchors.centerIn: parent
-                    }
-                    MouseArea
-                    {
-                        anchors.fill: parent
-                        onClicked:
-                        {
-
-                            _Loader.setSource("RedRectangle.qml")
-                            console.log("Clicked Attendance button")
-                        }
-
-                    }
-                }
-            }
-
-        }
-
+        id: _Colors
     }
+
+    MyDrawer
+    {
+        id: _Drawer
+    }
+
     Rectangle
     {
         z: -1
@@ -187,7 +100,7 @@ id: _Colors
 //            y: 80
         spacing: 40
 
-        width: parent.width - 100
+        width: parent.width
 
 
         anchors.horizontalCenter: parent.horizontalCenter
@@ -199,12 +112,32 @@ id: _Colors
             id: _First
             _IsBold: false
             _SubjectName: "Кафедра ---\nЛинейная математика"
+            MouseArea
+            {
+                anchors.fill: parent
+                onClicked:
+                {
+                       _Loader.source = "MainPage5.qml"
+                       console.log("Clicked subject button")
+                }
+
+            }
         }
         Subject
         {
             id: _Second
             _IsBold: false
             _SubjectName: "Кафедра ---\nЛинейная математика"
+            MouseArea
+            {
+                anchors.fill: parent
+                onClicked:
+                {
+                       _Loader.source = "MainPage5.qml"
+                       console.log("Clicked Subject button")
+                }
+
+            }
         }
 
     }

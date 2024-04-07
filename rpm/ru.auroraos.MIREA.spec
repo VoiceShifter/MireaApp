@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 
 
+
 %description
 Short description of my Aurora OS Application
 

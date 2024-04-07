@@ -6,8 +6,7 @@ Rectangle
     color: "#DBE2EF"
 
     anchors.horizontalCenter: parent.horizontalCenter
-        anchors.left: parent.left // Add this line to set the left anchor to the parent left
-        anchors.leftMargin: 20 // Set the left margin to 20 pixels
+    width: parent.width * 4 / 5
     height: 150
     radius: 25
 

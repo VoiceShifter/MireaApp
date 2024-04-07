@@ -13,7 +13,7 @@ Page {
     {
         id: _Loader
         anchors.fill: parent
-        source:"MainPage.qml"
+        source:"LoginPage.qml"
     }
 
 }

@@ -5,8 +5,7 @@ import Sailfish.Silica 1.0
 Item
 {
 
-    width: parent.width
-    height: parent.height
+
     Rectangle
     {
         Text {
@@ -121,8 +120,10 @@ Item
                     onClicked:
                     {
                         _Loader.source = "MainPage2.qml"
-                        console.log("Enter button pressed")
+
                     }
+
+
                 }
 
             }

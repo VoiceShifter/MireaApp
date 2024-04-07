@@ -40,25 +40,25 @@
     </message>
 </context>
 <context>
-    <name>MainPage</name>
+    <name>LoginPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="14"/>
+        <location filename="../qml/pages/LoginPage.qml" line="13"/>
         <source>MIREA
 APP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="65"/>
+        <location filename="../qml/pages/LoginPage.qml" line="64"/>
         <source>Login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="93"/>
+        <location filename="../qml/pages/LoginPage.qml" line="92"/>
         <source>Forget password?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="110"/>
+        <location filename="../qml/pages/LoginPage.qml" line="109"/>
         <source>ENTER</source>
         <translation type="unfinished"></translation>
     </message>
@@ -66,50 +66,17 @@ APP</source>
 <context>
     <name>MainPage2</name>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="58"/>
-        <source>Schedule</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage2.qml" line="73"/>
-        <source>Teachers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage2.qml" line="89"/>
-        <source>Attendance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage2.qml" line="132"/>
+        <location filename="../qml/pages/MainPage2.qml" line="45"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="154"/>
+        <location filename="../qml/pages/MainPage2.qml" line="67"/>
         <source>&lt;-- Понедельник --&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage2.qml" line="166"/>
-        <source>username</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>MainPage3</name>
-    <message>
-        <location filename="../qml/pages/MainPage3.qml" line="29"/>
-        <source>+</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage3.qml" line="41"/>
-        <source>&lt;-- Понедельник --&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage3.qml" line="53"/>
+        <location filename="../qml/pages/MainPage2.qml" line="79"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
@@ -117,17 +84,12 @@ APP</source>
 <context>
     <name>MainPage4</name>
     <message>
-        <location filename="../qml/pages/MainPage4.qml" line="30"/>
-        <source>+</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage4.qml" line="43"/>
+        <location filename="../qml/pages/MainPage4.qml" line="33"/>
         <source>IKBO - XX - XX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage4.qml" line="55"/>
+        <location filename="../qml/pages/MainPage4.qml" line="44"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
@@ -135,17 +97,12 @@ APP</source>
 <context>
     <name>MainPage5</name>
     <message>
-        <location filename="../qml/pages/MainPage5.qml" line="28"/>
-        <source>+</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage5.qml" line="40"/>
+        <location filename="../qml/pages/MainPage5.qml" line="33"/>
         <source>Математика</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage5.qml" line="52"/>
+        <location filename="../qml/pages/MainPage5.qml" line="45"/>
         <source>username</source>
         <translation type="unfinished"></translation>
     </message>
@@ -166,12 +123,12 @@ APP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="64"/>
+        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="74"/>
         <source>Teachers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="80"/>
+        <location filename="../qml/pages/MyDir/MyDrawer.qml" line="100"/>
         <source>Attendance</source>
         <translation type="unfinished"></translation>
     </message>
@@ -186,6 +143,19 @@ APP</source>
     <message>
         <location filename="../qml/pages/RedRectangle.qml" line="45"/>
         <source>username</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Teachers</name>
+    <message>
+        <location filename="../qml/pages/Teachers.qml" line="32"/>
+        <source>Преподаватели</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Teachers.qml" line="71"/>
+        <source>X</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
