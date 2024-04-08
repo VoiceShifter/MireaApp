@@ -11,6 +11,7 @@ Rectangle
     Colors
     {
         id: _Colors
+
     }
     color: _Colors._LightPurple
 
@@ -48,16 +49,25 @@ Rectangle
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.topMargin: 20
     }
+    Searcher
+    {
 
+        id: _Searcher
+    }
 
     TextField
     {
+        z:1
         id: _SearchField
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width - 100
         anchors.top: _Breaker.bottom
         anchors.topMargin: 40
         color: "white"
+        text: _Searcher.Cache
+
+
+
         rightItem: Rectangle
         {
             width: 50
@@ -77,30 +87,69 @@ Rectangle
                 anchors.fill: parent
                 onClicked:
                 {
-                    _SearchField.text =""
+                    _SearchField.text = ""
                 }
             }
 
         }
-    Searcher
+        }
+
+    Rectangle
     {
-        id: _Searcher
+        id: _SearchButton
+        width: 300
+        height: 60
+        anchors.horizontalCenter:  parent.horizontalCenter
+        anchors.top: _SearchField.bottom
+        anchors.topMargin: 10
+        MouseArea
+        {
+            anchors.fill: parent
+            onClicked:
+            {
+                _Searcher._Search(_SearchField.text)
+
+                _Searcher._Items = _SearchField.text
+
+            }
+        }
+        Text {
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            text: qsTr("Search")
+        }
     }
 
 
-    }
+
     ListView
     {
-        anchors.top: _SearchField.bottom
-        anchors.topMargin: 40
+        id: _TeachersView
+        anchors.top: _SearchButton.bottom
+        anchors.topMargin: 10
         width: parent.width
-        model: _DataModel
+        model: _Searcher._Items
+
+
         height: parent.height
-        spacing: 40
-    }
-    ObjectModel
-    {
-        id: _DataModel
+        spacing: 0
+        delegate: Rectangle
+        {
+            border.color: "black"
+            border.width: 1
+            width: parent.width
+            height: 60
+            Text {
+                id: name
+                font.bold: true
+                text: modelData
+                font.pointSize: 24
+                color: "black"
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+        }
     }
 
 

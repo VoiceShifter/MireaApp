@@ -149,13 +149,18 @@ APP</source>
 <context>
     <name>Teachers</name>
     <message>
-        <location filename="../qml/pages/Teachers.qml" line="32"/>
+        <location filename="../qml/pages/Teachers.qml" line="33"/>
         <source>Преподаватели</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Teachers.qml" line="71"/>
+        <location filename="../qml/pages/Teachers.qml" line="81"/>
         <source>X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/Teachers.qml" line="119"/>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

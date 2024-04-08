@@ -1,50 +1,117 @@
 # include "Searcher.h"
 
+const QString &Searcher::Cache() const
+{
+    qDebug() << "_Cache"<< '\n';
+
+    return _Cache;
+}
+
+QStringList Searcher::_GetItems()
+{
+    qDebug() << "_GetItems"<< '\n';
+
+    return _Items;
+}
+
+void Searcher::_PopulateItems(QStringList&)
+{
+    for (const auto& Iterator: Results)
+    {
+        _Items << Iterator.c_str();
+        qDebug() << "Appended"<< '\n';
+    }
+    qDebug() << "_List Populated"<< '\n';
+    emit listPopulated();
+}
+
+void Searcher::_PrintItems()
+{
+    for (const auto& Iterator : _Items)
+    {
+        qDebug() << Iterator << '\n';
+    }
+    qDebug() << "Ended printing" << '\n';
+}
+
+
+
 Searcher::Searcher(QObject *parent) : QObject(parent)
 {
-    std::fstream TeachersList;
-    TeachersList.open("/usr/share/ru.auroraos.MIREA/qml/Teachers.txt", std::ios::in); //в будущем надо будет сделать qml/data/Teachers.txt
-    std::string FirstName{}, SecondName{};
-    QString qFirstName{}, qSecondName{};
+    TeachersList.open("/usr/share/ru.auroraos.MIREA/qml/data/Teachers.txt", std::ios::in); //в будущем надо будет сделать qml/data/Teachers.txt
+    CacheFile.open("/usr/share/ru.auroraos.MIREA/qml/cache/Cache.txt", std::ios::in);
+    std::string Buffer{};
+    std::getline(CacheFile, Buffer);
+    _Cache = Buffer.c_str();
+    qDebug() << _Cache;
     if (!TeachersList.is_open())
     {
-        qDebug() << "File not found\n";
-
-
+        qDebug() << "File Teachers not found\n";
     }
-    else
+    if (!CacheFile.is_open())
     {
-        TeachersList >> FirstName >> SecondName;
-        qDebug() << FirstName.c_str() << " " << SecondName.c_str();
-//        while (!TeachersList.atEnd())
-//        {
-//            QByteArray line = TeachersList.readLine();
-//            qDebug() << line;
-//            qDebug() << "Line Printed";
-//            std::string path{"usr/share/bin"};  ///usr/bin/ru.auroraos.MIREA      /usr/share/ru.auroraos.MIREA
-//        }
-
+        qDebug() << "File CacheFile not found \n";
     }
-    std::string path{"/srv/shared/ru.auroraos/CppTest/data"};  ///usr/bin/ru.auroraos.MIREA      /usr/share/ru.auroraos.MIREA в дате нихуя нет
-    //пока что пихаем все в жопу (/usr/share/ru.auroraos.MIREA/qml/)
-    for (const auto & entry : std::filesystem::directory_iterator(path))
-        qDebug() << QString::fromStdString(entry.path());
-
-    //take file and create map
-    qDebug() << "Constructor called\n";
-}
-
-void Searcher::_TestCall()
-{
-    qDebug() << "TestCall called";
-}
-
-void Searcher::_Search()
-{
+    CacheFile.close();
 
 }
 
 Searcher::~Searcher()
 {
-    qDebug() << "Destructor called";
+
+}
+
+void Searcher::_Search(QString aInput)
+{
+
+    QFile aCacheFile();
+    CacheFile.open("/usr/share/ru.auroraos.MIREA/qml/cache/Cache.txt", std::ios::out);
+    Results.clear();
+
+    size_t Character{1};
+    std::string Buffer{}, Input{aInput.toStdString()};
+    CacheFile << Input;
+    qDebug() << aInput << '\n';
+    CacheFile.close();
+    for (; std::getline(TeachersList, Buffer);)
+    {
+          if (Buffer[0] == Input[0])
+          {
+                Results.insert(Buffer);
+          }
+    }
+
+    for (; Character < Input.size() && EndBit; ++Character)
+    {
+
+          Results = Iterate(Results, Input, Character);
+    }
+    qDebug() << "Seach complited\n";
+    for (const auto& Iterator : Results)
+    {
+        qDebug() << Iterator.c_str();
+    }
+      //TeachersList.seekg(0);
+    TeachersList.close();
+    TeachersList.open("/usr/share/ru.auroraos.TestList/qml/data/Teachers.txt", std::ios::in); //в будущем надо будет сделать qml/data/Teachers.txt
+    _Items.clear();
+
+}
+
+std::unordered_set<std::string> Searcher::Iterate(std::unordered_set<std::string> &aSet, std::string &Input, size_t Character)
+{
+    if (aSet.size() == 1 && Input.substr(Character, Input.size()-Character) == aSet.begin()->substr(Character, Input.size() - Character))
+    {
+          EndBit = 0;
+          return aSet;
+    }
+    std::unordered_set<std::string> NewResults{};
+    for (const auto& Iterator : aSet)
+    {
+          if (Iterator[Character] == Input[Character])
+          {
+                NewResults.insert(Iterator);
+          }
+    }
+    return NewResults;
 }
